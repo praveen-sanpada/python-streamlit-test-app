@@ -4,7 +4,6 @@ from PIL import Image
 # Set the title of the Streamlit application
 st.title("AWS Face Recognition")
 
-
 # File uploader widget
 img_file = st.file_uploader("Upload Image", type=['png', 'jpg', 'jpeg'])
 
