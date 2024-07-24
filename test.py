@@ -1,12 +1,9 @@
 import streamlit as st
 from PIL import Image
-import os
 
 # Set the title of the Streamlit application
 st.title("AWS Face Recognition")
 
-# List all images in the 'faces' directory
-list_images = os.listdir('faces')
 
 # File uploader widget
 img_file = st.file_uploader("Upload Image", type=['png', 'jpg', 'jpeg'])
@@ -29,10 +26,3 @@ if img_file is not None:
     
     # Display the uploaded image
     st.image(load_image(img_file), width=250)
-
-
-
-
-
-
-
